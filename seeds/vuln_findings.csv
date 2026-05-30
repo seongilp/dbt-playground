@@ -3015,3 +3015,4 @@ java,naive,usr/bin/pebble,CVE-2026-39825,stdlib,v1.26.2,"1.25.10, 1.26.3",HIGH
 java,naive,usr/bin/pebble,CVE-2026-39826,stdlib,v1.26.2,"1.25.10, 1.26.3",HIGH
 java,naive,usr/bin/pebble,CVE-2026-39836,stdlib,v1.26.2,"1.25.10, 1.26.3",HIGH
 java,naive,usr/bin/pebble,CVE-2026-42499,stdlib,v1.26.2,"1.25.10, 1.26.3",HIGH
+go,wolfi,harden-go:wolfi (wolfi),CVE-FAKE-0001,libc,1.0,1.1,CRITICAL
