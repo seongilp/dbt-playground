@@ -19,8 +19,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dbt-duckdb (uv)
-        run: uv pip install --system dbt-duckdb
+      - name: Install dbt-duckdb (uv venv)
+        run: |
+          uv venv
+          uv pip install dbt-duckdb
 
       - name: dbt build (SQL 빌드 + 데이터 테스트)
-        run: dbt build --profiles-dir .
+        run: uv run dbt build --profiles-dir .
