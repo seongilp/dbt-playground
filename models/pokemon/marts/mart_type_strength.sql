@@ -5,7 +5,8 @@ select
     round(avg(total), 1)    as avg_total,
     round(avg(attack), 1)   as avg_attack,
     round(avg(defense), 1)  as avg_defense,
-    round(avg(speed), 1)    as avg_speed
+    round(avg(speed), 1)    as avg_speed,
+    round(avg(sp_atk), 1)   as avg_sp_atk
 from {{ ref('stg_pokemon') }}
 group by 1
 order by avg_total desc
